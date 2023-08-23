@@ -1,10 +1,10 @@
 
 import Link from 'next/link';
-import { getAllCats } from '../../actions/getAllCats';
+import { getAllCatsNoStore } from '../../actions/getAllCatsNoStore';
 import Cards from '../../../components/Cards';
 
 export default async function Cats() {
-    const cats = await getAllCats();
+    const cats = await getAllCatsNoStore();
     return (
         <div className="container mx-auto w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
         <ul className="divide-y divide-gray-200">
