@@ -1,5 +1,5 @@
-import { getCats } from './../../../actions/getCats';
-import Card from './../../../../components/Card';
+import { getCats } from '../../../actions/getCats';
+import Card from '../../../../components/Card';
 
 export async function generateMetadata({ params }) {
     return {
@@ -9,6 +9,7 @@ export async function generateMetadata({ params }) {
 
 export default async function StaticCat({ params }) {
     const cat = await getCats(params.id);
+    console.log(cat)
     return (
         <>
             <Card data={cat.data} />
