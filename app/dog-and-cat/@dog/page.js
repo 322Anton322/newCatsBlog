@@ -9,7 +9,7 @@ export default async function Dogs() {
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
             {dogs?.data.map((dog) => (
                 // <Link  href={`/dog-and-cat/${dog.id}`}>
-                  <Cards data={dog}/>
+                  <Cards data={dog ? dog : null}/>
                 // </Link>
             ))
             }

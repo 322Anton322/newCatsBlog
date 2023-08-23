@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Button from "./../components/Button/Button"
 import { getAllDogs2 } from "./actions/test"
+import Cards from "../components/Cards"
 
 
 export default async function Home() {
@@ -9,11 +10,9 @@ export default async function Home() {
       <div>
         <ul>
             {dogs?.data.map((dog) => (
-                <Link  href={`/dogs/${dog.id}`}>
-                <h2>
-                    {dog.attributes.name}
-                </h2>
-                </Link>
+              <Link  href={`/dogs/${dog.id}`}>
+                <Cards data={dog}/>
+              </Link>
             ))
             }
         </ul>
