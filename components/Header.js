@@ -4,6 +4,12 @@ export const Header = () => {
     return (
         <header className=" top-0 px-2 border-b flex items-center justify-between">
             <nav className="flex items-center">
+            <Link
+                    className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800"
+                    href="/"
+                >
+                   <h2>Home</h2> 
+                </Link>
                 <Link
                     className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800"
                     href="/cats"
@@ -27,12 +33,6 @@ export const Header = () => {
                     href="/dog-and-cat"
                 >
                     <h2>Dogs and cats</h2> 
-                </Link>
-                <Link
-                    className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800"
-                    href="/login"
-                >
-                    <h2>Login</h2> 
                 </Link>
             </nav>
         </header>
