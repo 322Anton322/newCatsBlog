@@ -22,18 +22,6 @@ export const Header = () => {
                 >
                     <h2>Dogs</h2> 
                 </Link>
-                <Link
-                    className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800"
-                    href="/staticCats"
-                >
-                    <h2>Static cats</h2> 
-                </Link>
-                <Link
-                    className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800"
-                    href="/dog-and-cat"
-                >
-                    <h2>Dogs and cats</h2> 
-                </Link>
             </nav>
         </header>
     );
